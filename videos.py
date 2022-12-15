@@ -76,5 +76,5 @@ def renderFromFrames(framesPath,outputPath="", framespersecond=30, outputName = 
     if(video!=""):
         os.remove("tempExtactedAudio.wav")
 
-extractFrames("NzishIREebw.webm", "testt")
-renderFromFrames("testt",video = "NzishIREebw.webm")#, video = "C1zuQ4AgACU.webm")
+#extractFrames("NzishIREebw.webm", "testt")
+#renderFromFrames("testt",video = "NzishIREebw.webm")#, video = "C1zuQ4AgACU.webm")
