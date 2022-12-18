@@ -8,8 +8,11 @@ import re
 def onlyfiles(mypath):
 	onlyfiles = [join(mypath,f) for f in listdir(mypath) if isfile(join(mypath, f))]
 	return onlyfiles
+path = input("path")
+if(path == ""):
+	path = "./"
 
-files= onlyfiles("./")
+files= onlyfiles(path)
 print(len(files))
 
 for file in files:
