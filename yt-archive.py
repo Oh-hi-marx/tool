@@ -1,8 +1,9 @@
 from os import listdir
-from os.path import isfile, join
+import glob
+import os
 mypath = "./"
-onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
-#print (onlyfiles)
+onlyfiles = glob.glob(os.getcwd()+ os.sep +"*")
+print (len(onlyfiles))
 final = []
 
 for f in onlyfiles:
